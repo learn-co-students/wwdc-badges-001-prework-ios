@@ -16,11 +16,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    NSMutableArray *conferenceSpeakers = [NSMutableArray arrayWithArray:@[@"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage"]];
+
+    for (NSInteger i = 0; i < [conferenceSpeakers count]; i++) {
+        NSString *speakerName = conferenceSpeakers[i];
+        NSLog(@"Hello, my name is %@.", speakerName);
+    };
+
+//Doig the same loop with separate arrays for first and last names.
+    NSLog(@"\n");
+    //    Creating arrays using the method below was not alowing me to use the 'count' method in my loop's conditions. I don't know why.
+    //    NSMutableString *speakersFirstName = [NSMutableArray arrayWithArray:@[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles"]];
+    //    NSMutableArray *speakersLastName = [NSMutableArray arrayWithArray:@[@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Turing", @"Faraday", @"Hopper", @"Babbage"]];
     
-    // Hey!
+    NSArray *speakersFirstName = @[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles"];
+    NSMutableArray *nSpeakersFirstName = [speakersFirstName mutableCopy];
     
-    // Write your code here!!
+    NSArray *speakersLastName = @[@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Turing", @"Faraday", @"Hopper", @"Babbage"];
+    NSMutableArray *nSpeakersLastName = [speakersLastName mutableCopy];
+    
+    for (NSInteger i = 0; i < [nSpeakersFirstName count]; i++) {
+        NSString *firstName = nSpeakersFirstName[i];
+        NSString *LastName = nSpeakersLastName[i];
+        NSLog(@"Hello, my name is %@ %@.", firstName, LastName);
+    }
     
     return YES;
 }
