@@ -12,7 +12,7 @@
                                     @"Alan Turing", @"Michael Farady",
                                     @"Grace Hopper", @"Charles Babbage",];
     for (int i = 0; i < 8; i++){
-        NSLog (@"Hello, my name is %@",conferenceSpeakers[i]);
+        NSLog (@"Hello, my name is %@.",conferenceSpeakers[i]);
     }
     
     
