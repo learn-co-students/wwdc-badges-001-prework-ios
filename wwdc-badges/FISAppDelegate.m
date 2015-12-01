@@ -19,6 +19,14 @@
         NSLog(@"Hello, my name is %@.", conferenceSpeakers[i] );
     }
     
+    // Advanced task
+    NSArray *conSpeFirst = @[ @"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles" ];
+     NSArray *conSpeSecond = @[ @"Borg", @"Kay", @"Lovelace", @"Swartz", @"Turing", @"Faraday", @"Hopper", @"Babbage" ];
+    
+    for (NSUInteger i = 0; i < [conSpeFirst, conSpeSecond count]; i++) {
+        NSLog(@"Hello, my name is %@ %@.", conSpeFirst[i], conSpeSecond[i] );
+    }
+    
     // do not alter
     return YES;  //
     ///////////////
