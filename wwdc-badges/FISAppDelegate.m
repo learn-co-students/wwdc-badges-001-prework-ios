@@ -16,13 +16,13 @@
 //        NSLog(@ "Hello, my name is %@.",conferenceSpeakers[i]);
 //    }
 
-    NSArray *speakerFirstName =[NSArray arrayWithObjects:@"Anita", @"Alan", @"Ada", @"Aaron", @"Michael", @"Grace", @"Charles", nil];
-    NSArray *speakerLastName = [NSArray arrayWithObjects:@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Faraday", @"Hopper", @"Babbage", nil];
-    NSUInteger fN = [speakerFirstName count];
-    NSUInteger lN = [speakerLastName count];
+    NSArray *speakerFirstName = @[@"Anita", @"Alan", @"Ada", @"Aaron", @"Michael", @"Grace", @"Charles"];
+    NSArray *speakerLastName = @[@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Faraday", @"Hopper", @"Babbage"];
+    NSUInteger objectCount = [speakerFirstName count];
+    //NSUInteger lastN = [speakerLastName count];
 
-    for (fN = 0, lN = 0; fN <= 6, lN <= 6; fN++, lN++){
-    NSLog(@ "Hello, my name is %@ %@.",speakerFirstName[fN], speakerLastName[lN]);
+    for (NSUInteger i = 0; i < objectCount; i++) {
+        NSLog(@ "Hello, my name is %@ %@.",speakerFirstName[i], speakerLastName[i]);
     }
     
     
