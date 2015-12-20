@@ -6,14 +6,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
-    /**
-     
-     * Write your solution here.
-     
-     */
-    
+
+NSArray 
+
+
+
+
     // do not alter
     return YES;  //
     ///////////////
