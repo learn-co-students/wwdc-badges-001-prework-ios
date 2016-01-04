@@ -14,12 +14,13 @@
      
      */
     
-    // Solution (1 & 2)
+    // Solution (ADVANCED)
     
-    NSArray *conferenceSpeakers = @[@"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage"];
-    for (int i = 0; i < [conferenceSpeakers count]; i++) {
-        NSLog(@"Hello, my name is %@.", conferenceSpeakers[i]);
-    }
+    NSArray *firstNames = @[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles"];
+    NSArray *lastNames = @[@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Turing", @"Faraday", @"Hopper", @"Babbage"];
+    for (int i = 0; i < [lastNames count]; i++) {
+        NSLog(@"Hello, my name is %@ %@.", firstNames[i], lastNames[i]);
+    } // Note that this performs no error checking to ensure that every last name has a corresponding first name.
     
     // do not alter
     return YES;  //
