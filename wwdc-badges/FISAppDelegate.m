@@ -13,6 +13,15 @@
      * Write your solution here.
      
      */
+    NSArray *conferenceSpeakers = @[@"Anita Borg", @"Alan Kay",@"Ada Lovelace",@"Aaron Swartz",@"Alan Turing",@"Michael Faraday", @"Grace Hopper", @"Charles Babbage"];
+    NSArray *firstName = @[@"Anita",@"Alan",@"Ada",@"Aaron",@"Alan",@"Michael",@"Grace",@"Charles"];
+    NSArray *lastName = @[@"Borg",@"Kay",@"Lovelace",@"Swartz",@"Turing",@"Faraday",@"Hopper",@"Babbage"];
+    
+    
+    for (NSInteger i = 0; i < [conferenceSpeakers count]; i++){
+        NSLog(@"Hello my name is %@.", conferenceSpeakers[i]);
+    }
+    
     
     // do not alter
     return YES;  //
