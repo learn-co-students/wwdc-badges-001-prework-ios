@@ -17,7 +17,7 @@
     NSArray *conferenceSpeakers = @[@"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage"];
     
     for (NSString *item in conferenceSpeakers) {
-        NSLog(@"Hello, my name is %@", item);
+        NSLog(@"Helloi, my name is %@", item);
     }
     
     // do not alter
