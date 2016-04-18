@@ -17,14 +17,14 @@
         NSLog(@"Hello my name is %@!", conferenceSpeakers[i] );
     }
     
-    //First name, Last name iteration
+    //ADVANCED: First name, Last name iteration
 
     
-    NSArray *firstNames = @[ @"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles" ];
-    NSArray *lastNames = @[ @"Borg", @"Kay", @"Lovelace", @"Schwartz", @"Turing", @"Faraday", @"Hopper", @"Babbage" ];
+    //NSArray *firstNames = @[ @"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles" ];
+    //NSArray *lastNames = @[ @"Borg", @"Kay", @"Lovelace", @"Schwartz", @"Turing", @"Faraday", @"Hopper", @"Babbage" ];
     
-    for (NSUInteger i = 0; i < [firstNames, lastNames count]; i++) {
-        NSLog(@"Hello my name is %@!", conferenceSpeakers[i] );
+    //for (NSUInteger i = 0; i < [firstNames, lastNames count]; i++) {
+    //NSLog(@"Hello my name is %@!", conferenceSpeakers[i] );
     
     
     
