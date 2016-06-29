@@ -8,14 +8,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSArray *conferenceSpeakers = [NSArray arrayWithObjects:@"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage", nil];
+    NSArray *conferenceSpeakers = @[ @"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage" ];
     
-    NSUInteger speakerCount = [conferenceSpeakers count];
-    
-    for (NSUInteger i = 1; i<= speakerCount; i++) {
-        NSLog(@"Hellow, my name is  %@.", conferenceSpeakers[i]);
+    for (NSUInteger i = 0; i <= 8; i++) {
+        NSLog(@"Hello, my name is  %@.", conferenceSpeakers[i]);
     }
-    
     // do not alter
     return YES;  //
     ///////////////
