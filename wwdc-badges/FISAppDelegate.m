@@ -15,6 +15,18 @@
      */
     
     // do not alter
+    
+    NSArray *conferenceSpeakers = @[@"Anita Borg", @"Alan Kay", @"Ada Lovelace", @"Aaron Swartz", @"Alan Turing", @"Michael Faraday", @"Grace Hopper", @"Charles Babbage"];
+    
+    
+    for (NSUInteger i = 1; i < [conferenceSpeakers count]; i++) {
+        
+        NSString *hello = @"Hello, my name is ";
+        
+        NSLog(@"%@%@.", hello,conferenceSpeakers[i]);
+        
+    }
+    
     return YES;  //
     ///////////////
 }
