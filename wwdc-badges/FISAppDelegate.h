@@ -6,5 +6,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// methods here
+
 @end
 
