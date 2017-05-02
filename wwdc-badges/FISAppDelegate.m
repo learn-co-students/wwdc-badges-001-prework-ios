@@ -19,8 +19,15 @@
         NSLog(@"Hello, my name is %@!", conferenceSpeakers[i] );
     }
     
-/* I'm tired and ready for bed. I will continue trying to find the solution for the advanced version tomorrow. Thanks for the great lessons!
- */
+    // Here's my advanced version:
+
+    NSArray *firstNames = @[ @"Anita", @"Alan", @"Ada", @"Arron", @"Alan", @"Michael", @"Grace", @"Charles"];
+    NSArray *lastNames = @[ @"Borg", @"Kay", @"Lovelace", @"Swarts", @"Turing", @"Faraday", @"Hopper", @"Babbage"];
+    for (NSUInteger i = 0; i < [firstNames count]; i++) {
+        NSLog(@"Hello, my first name is %@ and my last name is %@!", firstNames[i], lastNames[i]);
+ }
+ 
+
     // do not alter
     return YES;  //
     ///////////////
