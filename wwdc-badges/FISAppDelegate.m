@@ -6,13 +6,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
-    /**
-     
-     * Write your solution here.
-     
-     */
+    NSArray *conferenceSpeakers =@[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles"];
+    
+    NSArray *speakersLastNames = @[@"Borg", @"Kay", @"Lovelace", @"Shwartz", @"Turing", @"Faraday", @"Hopper", @"Babbge"];
+    
+    for (NSUInteger i = 0; i < [conferenceSpeakers count] && [speakersLastNames count]; i++) {
+        NSLog(@"Hello, my name is %@ %@.", conferenceSpeakers[i], speakersLastNames[i]);
+    }
+    
     
     // do not alter
     return YES;  //
